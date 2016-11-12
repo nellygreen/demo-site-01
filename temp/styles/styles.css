@@ -489,6 +489,13 @@ a {
   display: block;
 }
 
+.large-hero--home {
+  background-image: url('../../assets/images/home-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
 .large-hero__text-content {
   padding-top: 88px;
   position: absolute;
