@@ -483,6 +483,7 @@ a {
 	border-bottom: 10px solid #2f5572;
     height: 100vh;
     width: 100%;
+    z-index: 0;
 	
 	
 }
@@ -491,12 +492,30 @@ a {
   display: block;
 }
 
-.large-hero--home {
-  background-image: url('../../assets/images/home-bg.jpg');
+.large-hero--backimage {
+  background-image: url('../../assets/images/apartments-bg.jpg');
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  z-index: 0;
+}
+
+.large-hero--plans {
+  background-image: url('../../assets/images/plans-bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 10;
   width: 100%;
+  height: 100vh;
+}
+
+.large-hero--map {
+  background-image: url('../../assets/images/location-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 
 .large-hero__text-content {
