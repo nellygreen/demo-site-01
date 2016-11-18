@@ -47,11 +47,11 @@
 
 	'use strict';
 
-	__webpack_require__(8);
+	__webpack_require__(9);
 
 /***/ },
 
-/***/ 8:
+/***/ 9:
 /***/ function(module, exports) {
 
 	(function(window, factory) {
