@@ -1114,21 +1114,29 @@ a {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 17%;
     
 }
 
+.site-footer__wrapper {
+  width: 100%;
+  position: relative;
+  left: 0;
+  text-align: center;
+}
+
 .site-footer__text {
-  display: block;
+  display: inline-block;
   font-weight: 300;
   font-size: .9rem;
-  margin-bottom: 1rem;
 }
 
 .site-footer__icons {
-  display: inline-block;
-  width: 100%;
-  -webkit-transform: translateX(43%) translateY(20%);
-          transform: translateX(43%) translateY(20%);
+  display: inline;
+  float: left;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .site-footer__icons a {
@@ -1184,6 +1192,7 @@ a {
   height: 59px;
   float: left;
   display: inline-block;
+  position: absolute;
 }
 
 .site-header__phone {
@@ -1217,9 +1226,8 @@ a {
     
     display: inline-block;
     float: left;
-    position: relative;
-    left: 10%;
-    right: 10%;
+    position: absolute;
+    left: 27%;
 }
 
 .primary-nav a {
