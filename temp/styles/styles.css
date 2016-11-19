@@ -493,6 +493,15 @@ a {
 	
 }
 
+.large-hero__overlay2 {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-image: url('../../assets/images/shadow2.png');
+  background-size: contain;
+  z-index: 15;
+}
+
 .large-hero__divider {
   position: relative;
   height: 2vh;
@@ -1251,6 +1260,10 @@ a {
   padding-right: 1.5rem;
   font-size: 1rem;
   float: left;
+}
+
+.primary-nav a.is-current-link {
+  color: #fabb69;
 }
 
 .primary-nav a:hover {
