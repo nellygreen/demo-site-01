@@ -493,12 +493,17 @@ a {
 	
 }
 
+.large-hero__zoom {
+  overflow: hidden;
+}
+
 .large-hero__overlay2 {
   width: 100%;
   height: 100vh;
   position: fixed;
   background-image: url('../../assets/images/shadow2.png');
   background-size: contain;
+  overflow: hidden;
   z-index: 15;
 }
 
@@ -510,43 +515,14 @@ a {
   background-color: #262c3a;
 }
 
-.large-hero--plans-wrapper {
-  padding-top: 55px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
-}
-
-.large-hero--plans {
-  background-image: url('../../assets/images/plans-bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-indent: -9999px;
-  z-index: 10;
-  width: 1100px;
-  height: 562px;
-  margin: 0 auto;
-  -webkit-transform: scale(1.06);
-          transform: scale(1.06);
-  opacity: 0.6;
-}
-
 .large-hero__text-content {
-  position: absolute;
-  z-index: 10;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50vh;
+  z-index: 30;
   text-align: center;
+  padding-top: 1%;
 }
 
 .large-hero__text-content--home {
-  top: 31%;
-  height: 35vh;
+  padding-top: 7%;
 }
 
 .large-hero__fixed-frame {
@@ -555,19 +531,77 @@ a {
   width: 70%;
   height: 61vh;
   top: 20%;
+  bottom: 20%;
   left: 15%;
   z-index: 20;
   border: .15rem #ed6a2c solid;
 }
 
+.large-hero__plan--left {
+  position: absolute;
+  background-image: url('../../assets/images/1-floor-a.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: scale(.9);
+          transform: scale(.9);
+  opacity: .6;
+  height: 100%;
+  width: 40%;
+  top: 0;
+  left: 0;
+}
+
+.large-hero__plan--right {
+  position: absolute;
+  background-image: url('../../assets/images/1-floor-b.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: scale(.9) translateX(5%);
+          transform: scale(.9) translateX(5%);
+  opacity: .6;
+  height: 100%;
+  width: 40%;
+  top: 0;
+  right: 0;
+}
+
 .large-hero__fixed-icon {
   position: absolute;
   z-index: 10;
-  left: 40%;
-  top: 95%;
-  width: 20%;
-  height: 20vh;
   text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(10%);
+          transform: translateX(-50%) translateY(10%);
+}
+
+.large-hero__location {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 40%;
+  bottom: 1%;
+}
+
+.large-hero__location P {
+  font-weight: 300;
+  text-shadow: 1px 1px 2px #3B3B3B;
+}
+
+.large-hero__location--icon {
+  background-image: url('../../assets/images/location_icon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+  text-indent: -9999px;
+  display: block;
+  width: 81px;
+  height: 118px;
+  -webkit-transform: scale(.8) translateY(-5%);
+          transform: scale(.8) translateY(-5%);
+  margin: 0 auto;
 }
 
 .large-hero__fixed-icon-arrow {
@@ -577,46 +611,49 @@ a {
   z-index: 10;
   text-indent: -9999px;
   display: block;
-  width: 36px;
-  height: 39px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
   margin: 0 auto;
 }
 
 .large-hero__line {
-  width: 45%;
+  display: inline-block;
+  width: 27%;
   height: 5%;
-  background-color: ;
   border-bottom: 5px solid #ed6a2c;
-  margin-left: 27.5%;
+  left: 50%;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 
 .large-hero__title {
   font-weight: 500;
-  text-shadow: 1px 1px 6px #3B3B3B;
-  letter-spacing: .04rem;
-  color: #F5F5F5;
-  font-size: 2.6rem;
+  text-shadow: 1px 1px 3px #3B3B3B;
+  letter-spacing: .02rem;
+  color: #fff;
+  font-size: 2.4rem;
   margin: 0 auto;
-  line-height: 1.3em
+  line-height: 1.3em;
+  display: block;
 }
 
 .large-hero__subtitle {
+  display: block;
   font-weight: 300;
-  text-shadow: 1px 1px 8px #1F1F1F;
   color: #fff;
-  font-size: 1.15rem;
+  text-shadow: 1px 1px 3px #3B3B3B;
+  font-size: 1rem;
   margin: 0 auto;
   line-height: 1.2em;
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%)
 }
 
 .large-hero__description {
+  display: block;
   color: #FFF;
   font-size: 1.05rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-left: auto;
   margin-right: auto;
 }
@@ -651,7 +688,6 @@ a {
 	max-width: 100%;
     position: relative;
 	margin: 0 auto;
-	overflow: hidden;
 }
 
 .wrapper--heading {
