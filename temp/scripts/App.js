@@ -75,7 +75,7 @@
 	var slider = new _Slider2.default();
 	var mobileMenu = new _MobileMenu2.default();
 	new _RevealOnScroll2.default((0, _jquery2.default)(".large-hero__text-content"), "85%");
-	new _RevealOnScroll2.default((0, _jquery2.default)(".large-hero__fixed-frame"), "95%");
+	new _RevealOnScroll2.default((0, _jquery2.default)(".large-hero__fixed-frame"), "85%");
 	var stickyHeader = new _StickyHeader2.default();
 	var modal = new _Modal2.default();
 
