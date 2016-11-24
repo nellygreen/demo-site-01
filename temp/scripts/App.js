@@ -46,14 +46,6 @@
 
 	'use strict';
 
-	var _Slider = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./modules/Slider\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _Slider2 = _interopRequireDefault(_Slider);
-
-	var _MobileMenu = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./modules/MobileMenu\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
-
 	var _RevealOnScroll = __webpack_require__(1);
 
 	var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
@@ -66,18 +58,11 @@
 
 	var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
-	var _Modal = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./modules/Modal\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _Modal2 = _interopRequireDefault(_Modal);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var slider = new _Slider2.default();
-	var mobileMenu = new _MobileMenu2.default();
 	new _RevealOnScroll2.default((0, _jquery2.default)(".large-hero__text-content"), "85%");
 	new _RevealOnScroll2.default((0, _jquery2.default)(".large-hero__fixed-frame"), "85%");
 	var stickyHeader = new _StickyHeader2.default();
-	var modal = new _Modal2.default();
 
 /***/ },
 /* 1 */
